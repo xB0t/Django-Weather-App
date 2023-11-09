@@ -2,6 +2,8 @@ version: '3.9'
 
 services:
   django:
+    environment:
+      API_KEY: ${API_KEY}
     image: django-weather-app
     build: .
     ports:
