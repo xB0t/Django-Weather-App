@@ -4,7 +4,6 @@ services:
   django:
     environment:
       API_KEY: ${API_KEY}
-    image: django-weather-app
-    build: .
+    image: xb0t/django-weather-app
     ports:
       -  "8000"
