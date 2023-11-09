@@ -1,4 +1,4 @@
-version: '3.9'
+version: '3.3'
 
 services:
   django:
@@ -7,4 +7,4 @@ services:
     image: django-weather-app
     build: .
     ports:
-      -  "8000:8000"
+      -  "8000"
