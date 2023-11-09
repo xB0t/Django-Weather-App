@@ -7,4 +7,4 @@ services:
     image: django-weather-app
     build: .
     ports:
-      -  "8000:8000"
+      -  "33525:8000"
