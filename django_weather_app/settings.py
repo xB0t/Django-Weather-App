@@ -113,10 +113,8 @@ USE_I18N = True
 
 USE_TZ = True
 
-CSRF_TRUSTED_ORIGINS = ['https://weather2.xb0t.pw:32779','https://weather2.xb0t.pw','https://*.xb0t.pw']
+
 CSRF_TRUSTED_ORIGINS = [
-    'https://weather2.xb0t.pw',
-    'https://weather2.xb0t.pw',
     'https://*.xb0t.pw',
 ]
 
