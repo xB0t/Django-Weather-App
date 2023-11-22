@@ -114,7 +114,14 @@ USE_I18N = True
 USE_TZ = True
 
 CSRF_TRUSTED_ORIGINS = ['https://weather2.xb0t.pw:32779','https://weather2.xb0t.pw','https://*.xb0t.pw']
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+CSRF_TRUSTED_ORIGINS = [
+    'https://weather2.xb0t.pw',
+    'https://weather2.xb0t.pw',
+    'https://*.xb0t.pw',
+]
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SESSION_COOKIE_SECURE = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
