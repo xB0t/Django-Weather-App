@@ -7,3 +7,8 @@ services:
     image: xb0t/django-weather-app
     ports:
       -  "8000"
+
+networks:
+  default:
+    name: yash_network
+    external: true
