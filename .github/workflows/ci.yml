@@ -19,9 +19,9 @@ jobs:
         ssh-keyscan -H ${{ secrets.SSH_HOST }} > ~/.ssh/known_hosts
     - name: connected
       run: echo "Connected to the VM."
-    - name: connect and pull
-      run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 
-        "sudo docker ps -a"
+    # - name: connect and pull
+    #   run: ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} 
+    #     "sudo docker ps -a"
         
     - name: Build Image Locally
       uses: appleboy/ssh-action@v1.0.0
