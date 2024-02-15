@@ -64,7 +64,7 @@ jobs:
           sudo docker image rm django-weather-app
           cd projects/Django-Weather-App
           sudo docker compose up -d
-          sudo docker image rm xb0t/django-weather-app
+          
     - name: cleanup
       run: rm -rf ~/.ssh
 
