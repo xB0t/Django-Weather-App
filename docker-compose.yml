@@ -10,7 +10,7 @@ services:
     ports:
       -  "8000"
 volumes:
-  sqlite_data
+  sqlite_data:
   
 networks:
   default:
