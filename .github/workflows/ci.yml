@@ -34,7 +34,7 @@ jobs:
           cd projects/Django-Weather-App
           sudo docker compose down
           git pull
-          sudo docker build -t django-weather-app .
+          sudo docker build --no-cache -t django-weather-app .
 
     - name: Checkout
       uses: actions/checkout@v4
