@@ -6,7 +6,7 @@ services:
       API_KEY: ${API_KEY}
     image: xb0t/django-weather-app
     volumes:
-      - sqlite_data:/code/db.sqlite3
+      - /home/ubuntu/projects/Django-Weather-App/sqlite_data:/code/db.sqlite3
     ports:
       -  "8000"
 
