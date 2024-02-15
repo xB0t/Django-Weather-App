@@ -25,9 +25,20 @@ SECRET_KEY = 'django-insecure-h=6qjb^a2*@xg2s19t5e@7y@5a73tt@kflw%^fa-_g9q_t5mvf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['app.thecodecontrol.me']
 CORS_ALLOW_HEADERS = ['*']
-CORS_ORIGIN_ALLOW_ALL = True
+#CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOWED_ORIGINS = [
+    "https://app.thecodecontrol.me",
+]
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.xb0t.pw',
+    'https://app.thecodecontrol.me',
+]
+
 
 # Application definition
 
@@ -50,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'django_weather_app.urls'
@@ -114,11 +126,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://*.xb0t.pw',
-    'https://app.thecodecontrol.me',
-]
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SESSION_COOKIE_SECURE = True
