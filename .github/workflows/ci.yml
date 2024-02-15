@@ -33,6 +33,7 @@ jobs:
         script: |
           cd projects/Django-Weather-App
           sudo docker compose down
+          sudo docker image rm xb0t/django-weather-app
           git pull
           sudo docker build --no-cache -t django-weather-app .
 
