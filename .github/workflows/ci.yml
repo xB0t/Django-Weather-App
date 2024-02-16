@@ -32,6 +32,7 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         script: |
           sudo docker image rm django-weather-app
+          sudo docker image rm xb0t/django-weather-app
           cd projects/Django-Weather-App
           sudo docker compose down
           git pull
