@@ -8,7 +8,9 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY . .
+COPY ./settings.py ./
+
+COPY settings.py settings.py
 
 EXPOSE 8000
 
