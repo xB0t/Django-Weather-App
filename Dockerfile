@@ -8,9 +8,9 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY ./settings.py ./
+COPY . .
 
-COPY settings.py settings.py
+COPY django_weather_app/settings.py django_weather_app/settings.py
 
 EXPOSE 8000
 
