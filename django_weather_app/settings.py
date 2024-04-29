@@ -30,13 +30,13 @@ CORS_ALLOW_HEADERS = ['*']
 #CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://app.thecodecontrol.me",
+    "weather.xb0t.xyz",
 ]
 
 
 CSRF_TRUSTED_ORIGINS = [
     'https://*.xb0t.pw',
-    'https://app.thecodecontrol.me',
+    'weather.xb0t.xyz',
 ]
 
 
