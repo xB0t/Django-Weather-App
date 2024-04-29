@@ -32,10 +32,12 @@ jobs:
         port: ${{ secrets.SSH_PORT }}
         script: |
           cd projects/Django-Weather-App
+          git clone https://github.com/xB0t/Django-Weather-App.git
+          git pull
           sudo docker compose down
           sudo docker image rm -f django-weather-app
           sudo docker image rm -f xb0t/django-weather-app
-          git pull
+          
           sudo docker build --no-cache -t django-weather-app .
 
     - name: Checkout
