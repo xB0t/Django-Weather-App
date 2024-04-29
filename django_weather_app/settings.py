@@ -35,8 +35,8 @@ CORS_ALLOWED_ORIGINS = [
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://*.xb0t.pw',
-    'weather.xb0t.xyz',
+    'https://*.xb0t.xyz',
+    'https://weather.xb0t.xyz',
 ]
 
 
