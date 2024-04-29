@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-h=6qjb^a2*@xg2s19t5e@7y@5a73tt@kflw%^fa-_g9q_t5mvf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['app.thecodecontrol.me']
+ALLOWED_HOSTS = ['weather.xb0t.xyz']
 CORS_ALLOW_HEADERS = ['*']
 #CORS_ORIGIN_ALLOW_ALL = True
 
