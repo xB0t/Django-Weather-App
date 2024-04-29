@@ -34,8 +34,8 @@ jobs:
           cd projects/
           git clone https://github.com/xB0t/Django-Weather-App.git
           cd projects/Django-Weather-App/
-          git pull
           sudo docker compose down
+          sudo rm -r Django-Weather-App/
           sudo docker image rm -f django-weather-app
           sudo docker image rm -f xb0t/django-weather-app
           
