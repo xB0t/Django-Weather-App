@@ -25,18 +25,18 @@ SECRET_KEY = 'django-insecure-h=6qjb^a2*@xg2s19t5e@7y@5a73tt@kflw%^fa-_g9q_t5mvf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['weather.xb0t.xyz']
+ALLOWED_HOSTS = ['weather.xb0t.site']
 CORS_ALLOW_HEADERS = ['*']
 #CORS_ORIGIN_ALLOW_ALL = True
 
 CORS_ALLOWED_ORIGINS = [
-    "weather.xb0t.xyz",
+    "weather.xb0t.site",
 ]
 
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://*.xb0t.xyz',
-    'https://weather.xb0t.xyz',
+    'https://*.xb0t.site',
+    'https://weather.xb0t.site',
 ]
 
 
