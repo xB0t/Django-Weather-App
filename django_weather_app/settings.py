@@ -37,7 +37,6 @@ CORS_ALLOWED_ORIGINS = [
 CSRF_TRUSTED_ORIGINS = [
     'https://*.xb0t.site',
     'https://weather.xb0t.site',
-    /#''
 ]
 
 
