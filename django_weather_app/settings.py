@@ -135,6 +135,8 @@ SESSION_COOKIE_SECURE = True
 
 STATIC_URL = 'static/'
 
+#this build for new Docker hub image.
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
